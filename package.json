@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "module": "dist/index.js",
-  "repository": "https://github.com/BlueBaseJS/plugin-material-ui",
+  "repository": "https://github.com/<%= GIT_ORG %>/<%= GIT_REPO %>",
   "license": "MIT",
   "keywords": [],
   "config": {},
