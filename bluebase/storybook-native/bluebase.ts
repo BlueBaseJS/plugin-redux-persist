@@ -1,6 +1,7 @@
-import { BootOptions } from "@bluebase/core";
-import commonBootOptions from "../common/bluebase";
-import deepmerge from "deepmerge";
+import { BootOptions } from '@bluebase/core';
+import commonBootOptions from '../common/bluebase';
+import deepmerge from 'deepmerge';
+import isPlainPbject from 'is-plain-object';
 
 /**
  * Add your platform specific configs here.
@@ -9,4 +10,6 @@ import deepmerge from "deepmerge";
  */
 const bootOptions: Partial<BootOptions> = {};
 
-export default deepmerge(commonBootOptions, bootOptions);
+export default deepmerge(commonBootOptions, bootOptions, {
+	isMergeableObject: i => isPlainPbject(i) || Array.isArray(i),
+});
