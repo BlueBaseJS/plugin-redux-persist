@@ -55,7 +55,7 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
-    "@bluebase/cli-essentials": "^0.0.5",
+    "@bluebase/cli-essentials": "^2.0.0",
     "@bluebase/code-standards": "^2.2.4",
     "@bluebase/storybook-addon": "^3.0.0",
     "@types/enzyme": "^3.9.0",
